@@ -1,0 +1,36 @@
+{
+  "name": "Cognis Utility Bookmarklets",
+  "version": "1.0.0",
+  "snippets": [
+    {
+      "name": "Word Count",
+      "category": "Text",
+      "source": "(function(){var t=(window.getSelection&&window.getSelection().toString())||'';var n=t.trim()?t.trim().split(/\\s+/).length:0;alert(n+' word(s) selected');})();",
+      "description": "Counts the words in the current text selection and shows the total."
+    },
+    {
+      "name": "Show Page Title",
+      "category": "Page Info",
+      "source": "(function(){alert(document.title+'\\n'+location.href);})();",
+      "description": "Displays the current page title and URL."
+    },
+    {
+      "name": "Reading Time",
+      "category": "Text",
+      "source": "(function(){var w=(document.body.innerText||'').trim().split(/\\s+/).length;alert(Math.max(1,Math.round(w/200))+' min read ('+w+' words)');})();",
+      "description": "Estimates reading time at 200 words per minute."
+    },
+    {
+      "name": "Highlight Links",
+      "category": "Page Info",
+      "source": "(function(){var a=document.getElementsByTagName('a');for(var i=0;i<a.length;i++){a[i].style.outline='2px solid orange';}alert(a.length+' link(s) outlined');})();",
+      "description": "Outlines every anchor element on the page for a quick visual audit."
+    },
+    {
+      "name": "Scroll To Top",
+      "category": "Navigation",
+      "source": "(function(){window.scrollTo({top:0,behavior:'smooth'});})();",
+      "description": "Smoothly scrolls the current page back to the top."
+    }
+  ]
+}

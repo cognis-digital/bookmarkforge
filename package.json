@@ -1,0 +1,41 @@
+{
+  "name": "@cognis-digital/bookmarkforge",
+  "version": "1.0.0",
+  "description": "Auditable manager for bookmarklets and browser automation snippets: lint, integrity-hash, and export browser-importable Netscape bookmarks HTML.",
+  "type": "module",
+  "bin": {
+    "bookmarkforge": "dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test \"dist/test/*.test.js\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "bookmarklet",
+    "bookmarks",
+    "netscape",
+    "lint",
+    "audit",
+    "sha256",
+    "browser",
+    "cli"
+  ],
+  "author": "Cognis Digital",
+  "license": "SEE LICENSE IN README (COCL 1.0)",
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}
