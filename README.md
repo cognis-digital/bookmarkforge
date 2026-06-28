@@ -8,6 +8,35 @@ a `javascript:` bookmarklet.
 
 Zero runtime dependencies. TypeScript, Node ESM.
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+"bookmarks": [
+  {
+    "id": "1234567890",
+    "title": "Example Bookmark 1",
+    "url": "https://example.com/page1",
+    "tags": ["tag1", "tag2"],
+    "notes": "This is a note for bookmark 1"
+  },
+  {
+    "id": "2345678901",
+    "title": "Example Bookmark 2",
+    "url": "https://example.com/page2",
+    "tags": ["tag3", "tag4"],
+    "notes": "This is a note for bookmark 2"
+  }
+]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Why
 
 Bookmarklets are tiny, powerful, and easy to lose track of. A snippet that
